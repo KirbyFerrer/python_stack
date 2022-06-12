@@ -1,0 +1,14 @@
+.counter{
+    display: inline-block;
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+}
+a{
+    background-color: forestgreen;
+    width: 200px;
+    height: 50px;
+    border-style: solid;
+    border: 2px black;
+    padding: 10px;
+}
