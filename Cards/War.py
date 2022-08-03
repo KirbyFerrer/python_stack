@@ -6,7 +6,7 @@ player_two_score = 0
 deck = []
 
 def create_deck():
-    for suit in('Hearts','Diamonds','Clubs','Spades'):
+    for suit in(' Hearts',' Diamonds',' Clubs',' Spades'):
         for rank in range(2,15):
             deck.append((rank,suit))
 
@@ -16,13 +16,13 @@ def readable_card(card):
     if card[0] == 12: rank = ' Queen'
     if card[0] == 13: rank = ' King'
     if card[0] == 14: rank = ' Ace'
-    fullname = rank + 'of' + card[1]
+    fullname = rank + ' of' + card[1]
     return fullname
 
 def draw_card(player):
     card = deck[0]
     deck.remove(deck[0])
-    print(player + ' drew the' + readable_card( card))
+    print(player + ' drew the ' + readable_card( card))
     return card
 
 create_deck()
